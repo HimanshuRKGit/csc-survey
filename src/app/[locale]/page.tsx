@@ -1,48 +1,36 @@
 import { Link } from "@/i18n/navigation";
 
-const painPoints = [
+const earningPoints = [
   {
-    hi: "कमीशन कितना मिलेगा और कब मिलेगा — यह अक्सर साफ नहीं होता। आप काम करते हैं, पर पैसे कब आएंगे यह अंदाज़ा नहीं।",
-    en: "Commission amounts and payment dates are often unclear. You do the work, but you're left guessing when the money will arrive.",
+    hi: "आप रोज़ कितने ग्राहकों को सेवा देते हैं, और किस काम से सबसे ज़्यादा कमाई होती है — AEPS, PAN कार्ड, लोन, इंश्योरेंस, या कुछ और?",
+    en: "How many customers do you serve daily, and which work brings the most income — AEPS, PAN card, loans, insurance, or something else?",
   },
   {
-    hi: "कभी-कभी ग्राहक का पैसा खाते से कट जाता है, पर ट्रांज़ेक्शन पूरा नहीं होता। ग्राहक नाराज़ होता है और समस्या सुलझाने की ज़िम्मेदारी आप पर आ जाती है।",
-    en: "Sometimes money is deducted from the customer's account but the transaction doesn't go through. The customer gets upset, and you're left to sort it out.",
+    hi: "क्या आपको पता है कि कुछ ऑपरेटर एक ही काम से दूसरों से ज़्यादा कमा रहे हैं? हम जानना चाहते हैं — फर्क कहां है, और क्या वो तरीका आप भी अपना सकते हैं।",
+    en: "Did you know some operators earn more than others doing the exact same work? We want to find out where the difference lies — and whether that same method could work for you too.",
   },
   {
-    hi: "जब पेमेंट में गड़बड़ी होती है, तो बैंक से बात करना और पैसे वापस करवाना — यह सब आपको खुद करना पड़ता है। कई-कई दिन लग जाते हैं, कभी-कभी नुकसान भी उठाना पड़ता है।",
-    en: "When payments go wrong, you're the one chasing the bank for days to fix it — often absorbing the loss yourself in the meantime.",
-  },
-  {
-    hi: "बिजली, इंटरनेट, किराया — सब बढ़ता जा रहा है। पर CSC, जन सेवा केंद्र या साइबर कैफे पर मिलने वाला कमीशन वहीं रहा या घट गया।",
-    en: "Electricity, internet, rent — all rising. But the commission from CSC, Jan Seva Kendra, or Cyber Cafe work has stayed the same or shrunk.",
-  },
-  {
-    hi: "एक ही इलाके में बहुत सारे केंद्र खुल गए हैं। वही ग्राहक, वही काम — सबके बीच बंट जाता है। आगे बढ़ने का रास्ता साफ नहीं दिखता।",
-    en: "Too many centers have opened in the same area, splitting the same customers. There's no clear way to stand out or earn more.",
-  },
-  {
-    hi: "कमीशन तय करने वाले, नियम बनाने वाले — वो कभी आपकी दुकान पर नहीं बैठे। उन्हें नहीं पता कि ज़मीन पर असल में क्या होता है।",
-    en: "The people who set commission rates and make the rules have never sat at your counter. They don't know what it's actually like on the ground.",
+    hi: "हर महीने कितना कमीशन मिलता है, यह अक्सर बदलता रहता है। हम यह समझना चाहते हैं कि किन कामों में सबसे स्थिर और सबसे ज़्यादा कमाई है — ताकि सही जानकारी सबके पास पहुंचे।",
+    en: "Monthly commission often varies. We want to understand which services give the most stable and highest earnings — so the right information reaches everyone.",
   },
 ] as const;
 
-const benefits = [
+const opportunityPoints = [
   {
-    hi: "आपकी समस्याएं — देरी से पेमेंट, अस्पष्ट कमीशन, ट्रांज़ेक्शन विवाद — इस रिसर्च में दर्ज होंगी और आगे ले जाई जाएंगी। वरना ये मुश्किलें हमेशा अदृश्य ही रहती हैं।",
-    en: "Your problems — delayed payments, unclear commissions, transaction disputes — get documented and raised, instead of staying invisible to the people who could fix them.",
+    hi: "जो ऑपरेटर अपनी सही कमाई और तरीका बताते हैं, उन्हीं की मदद से नए, बेहतर मौके बनते हैं — जैसे नए कमीशन प्लान, नई सेवाएं, या बेहतर पार्टनरशिप जो आपकी कमाई बढ़ा सकें।",
+    en: "The operators who honestly share their real earnings and methods are exactly who new, better opportunities get built for — like new commission plans, new services, or better partnerships that could increase your income.",
   },
   {
-    hi: "यह रिसर्च खासतौर पर इसलिए हो रही है ताकि कमीशन पेमेंट को ज़्यादा भरोसेमंद और साफ बनाया जा सके। आपके जवाब सीधे तय करेंगे कि आगे क्या प्रस्तावित हो।",
-    en: "This research is specifically about making commission payments more reliable and transparent. Your honest answers directly shape what gets proposed next.",
+    hi: "अभी बहुत से ऑपरेटर्स को पता ही नहीं कि कौन सी सेवा सबसे ज़्यादा कमाई दे रही है आसपास के इलाकों में। यह रिसर्च वो जानकारी इकट्ठा कर रही है — और हिस्सा लेने वालों को सबसे पहले बताएगी।",
+    en: "Right now, many operators don't even know which service is earning the most in their area. This research is gathering exactly that information — and the people who participate will be told first.",
   },
   {
-    hi: "अगर इस रिसर्च से कोई बेहतर और भरोसेमंद कमाई का मौका सामने आता है, तो जिन ऑपरेटरों ने अपनी बात रखी — वो सबसे पहले जानेंगे।",
-    en: "If a better, more reliable earning opportunity comes out of this research, the operators who shared their experience will be the first to know.",
+    hi: "अगर आगे कोई नया, ज़्यादा कमाई वाला मौका या पार्टनरशिप सामने आती है — जिन्होंने इस सर्वे में हिस्सा लिया, उन्हें प्राथमिकता मिलेगी।",
+    en: "If a new, higher-earning opportunity or partnership comes forward in the future — the people who participated in this survey will get priority.",
   },
   {
-    hi: "सिर्फ 5–8 मिनट लगेंगे। आपके समय और ईमानदारी की कद्र करते हुए, ₹100 की छोटी-सी नेक-नियत भेंट दी जाएगी।",
-    en: "Takes only 5–8 minutes. As a small token of appreciation for your time and honesty, you'll receive ₹100.",
+    hi: "सिर्फ 5–8 मिनट लगेंगे। आपके समय और जानकारी की कद्र करते हुए, ₹100 की छोटी-सी भेंट दी जाएगी।",
+    en: "Takes only 5–8 minutes. As a token of appreciation for your time and information, you'll receive ₹100.",
   },
 ] as const;
 
@@ -58,11 +46,11 @@ export default function HomePage() {
             चलाने वाले भाई-बहनों —
           </h1>
           <p className="text-3xl sm:text-4xl font-bold text-green-300 mt-1 leading-snug">
-            यह सर्वे आपके लिए है
+            अपनी कमाई बढ़ाने का मौका है
           </p>
           <p className="text-base sm:text-lg font-medium text-white/70 mt-3 leading-relaxed">
             For CSC, Jan Seva Kendra, and Cyber Cafe Operators —<br className="hidden sm:inline" />
-            This Survey Is for You
+            A Chance to Increase Your Daily Earnings
           </p>
 
           <div
@@ -70,10 +58,10 @@ export default function HomePage() {
             style={{ background: "rgba(255,255,255,0.07)" }}
           >
             <p className="text-sm leading-relaxed text-white/90">
-              यह एक स्वतंत्र रिसर्च है — किसी बैंक, कंपनी या ऐप से नहीं जुड़ी। हम जानना चाहते हैं कि आप जैसे ऑपरेटर रोज़ किन मुश्किलों का सामना करते हैं।
+              यह एक स्वतंत्र रिसर्च है। हम जानना चाहते हैं — आप रोज़ कैसे पैसे कमाते हैं, कौन से काम से ज़्यादा फायदा होता है, और कहां नए मौके छुपे हैं जो शायद आपको पता भी न हों।
             </p>
             <p className="text-xs leading-relaxed text-white/55 mt-2">
-              Independent research — not affiliated with any bank, company, or app. We want to understand the real, everyday challenges operators like you face.
+              This is independent research. We want to understand — how you earn money every day, which work brings the most benefit, and where new opportunities might be hiding that you may not even know about.
             </p>
           </div>
         </div>
@@ -82,16 +70,16 @@ export default function HomePage() {
       {/* ── Main Content ── */}
       <div className="flex-1 max-w-lg mx-auto w-full px-4 py-7 space-y-8">
 
-        {/* Pain Points */}
+        {/* Section 2 — Earning Understanding */}
         <section>
           <h2 className="text-xl font-bold text-navy-800 leading-snug">
-            हम जानते हैं — आपके काम में ये मुश्किलें आती हैं
+            हम समझना चाहते हैं आपकी रोज़ की कमाई का तरीका
           </h2>
           <p className="text-sm text-text-secondary mt-1 mb-5">
-            We Know the Problems You Deal With Every Day
+            We Want to Understand How You Earn — Every Day
           </p>
           <div className="space-y-3">
-            {painPoints.map((point, i) => (
+            {earningPoints.map((point, i) => (
               <div key={i} className="card p-4 flex gap-3">
                 <div
                   className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
@@ -108,30 +96,30 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Benefits */}
+        {/* Section 3 — Opportunity */}
         <section>
           <h2 className="text-xl font-bold text-navy-800 leading-snug">
-            तो इस सर्वे का जवाब देने से आपको क्या फायदा?
+            यह सर्वे नए मौके खोल सकता है
           </h2>
           <p className="text-sm text-text-secondary mt-1 mb-5">
-            So What&apos;s in This for You?
+            This Survey Could Open New Opportunities
           </p>
           <div className="space-y-3">
-            {benefits.map((benefit, i) => (
+            {opportunityPoints.map((point, i) => (
               <div key={i} className="card p-4 flex gap-3">
                 <div className="w-7 h-7 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-sm text-white font-bold leading-none">✓</span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-navy-800 leading-relaxed">{benefit.hi}</p>
-                  <p className="text-xs text-text-muted mt-1.5 leading-relaxed">{benefit.en}</p>
+                  <p className="text-sm font-semibold text-navy-800 leading-relaxed">{point.hi}</p>
+                  <p className="text-xs text-text-muted mt-1.5 leading-relaxed">{point.en}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Privacy */}
+        {/* Section 4 — Privacy */}
         <section
           className="card p-4"
           style={{ borderLeft: "4px solid var(--color-green-600)" }}
@@ -147,8 +135,15 @@ export default function HomePage() {
           </p>
         </section>
 
-        {/* CTA */}
+        {/* Section 5 — CTA */}
         <section className="text-center pb-2">
+          <p className="text-base font-bold text-navy-800 leading-snug mb-1">
+            अपनी कमाई की कहानी बताएं — नए मौके का हिस्सा बनें
+          </p>
+          <p className="text-xs text-text-secondary mb-5">
+            Share Your Earning Story — Be Part of the Next Opportunity
+          </p>
+
           <Link
             href="/survey"
             id="start-survey-btn"
@@ -160,11 +155,18 @@ export default function HomePage() {
               paddingBottom: "1.125rem",
             }}
           >
-            <span className="text-xl font-bold">सर्वे शुरू करें</span>
-            <span className="text-sm font-normal" style={{ opacity: 0.85 }}>Start Survey</span>
+            <span className="text-xl font-bold">सर्वे शुरू करें →</span>
+            <span className="text-sm font-normal" style={{ opacity: 0.85 }}>Start Survey →</span>
           </Link>
+
           <p className="mt-3 text-sm font-semibold text-green-700">सिर्फ 5–8 मिनट लगेंगे</p>
           <p className="text-xs text-text-hint mt-0.5">Takes only 5–8 minutes</p>
+          <p className="mt-3 text-xs font-medium text-navy-800">
+            जो जानकारी देंगे, वही सबसे पहले मौका पाएंगे।
+          </p>
+          <p className="text-xs text-text-secondary mt-0.5">
+            Those who share information will be the first to get the opportunity.
+          </p>
         </section>
       </div>
 

@@ -182,20 +182,20 @@ export default function SurveyPage() {
       await submitSurvey(surveyData);
       clearFormData();
       router.push("/thank-you");
-    } catch {
+    } catch (err) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.error("Survey submit error:", errMsg);
+
       // Save locally and queue for retry
       queueSubmission(surveyData);
       clearFormData();
-      setSavedLocally(true);
-      setSubmitError("");
+      setSavedLocally(false);
 
-      // If online but failed, show error
       if (navigator.onLine) {
+        setSubmitError(`Submit failed: ${errMsg}`);
+      } else {
         setSubmitError(tCommon("savedLocally"));
       }
-
-      // Navigate to thank-you with offline flag
-      router.push("/thank-you?offline=1");
     } finally {
       setIsSubmitting(false);
     }

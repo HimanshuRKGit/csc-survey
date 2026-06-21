@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "CSC / JSK / साइबर कैफ़े फ़ील्ड सर्वेक्षण",
+    "description": "CSC, जन सेवा केंद्र और साइबर कैफ़े ऑपरेटरों के लिए फ़ील्ड सर्वेक्षण डेटा संग्रह उपकरण"
+  },
+  "common": {
+    "appTitle": "CSC फ़ील्ड सर्वेक्षण",
+    "startSurvey": "सर्वेक्षण शुरू करें",
+    "submit": "जमा करें",
+    "submitting": "जमा हो रहा है...",
+    "goHome": "होम पेज",
+    "newSurvey": "नया सर्वेक्षण",
+    "required": "आवश्यक",
+    "optional": "वैकल्पिक",
+    "select": "चुनें",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "sometimes": "कभी-कभी",
+    "language": "भाषा",
+    "hindi": "हिंदी",
+    "english": "English",
+    "offline": "आप ऑफ़लाइन हैं। डेटा स्थानीय रूप से सहेजा गया है और ऑनलाइन होने पर स्वचालित रूप से जमा किया जाएगा।",
+    "savedLocally": "डेटा स्थानीय रूप से सहेजा गया — ऑनलाइन होने पर पुनः प्रयास किया जाएगा",
+    "queueProcessed": "ऑफ़लाइन सहेजे गए सर्वेक्षण सफलतापूर्वक जमा किए गए!",
+    "back": "वापस"
+  },
+  "home": {
+    "heroTitle": "CSC / JSK / साइबर कैफ़े",
+    "heroSubtitle": "फ़ील्ड सर्वेक्षण",
+    "description": "यह सर्वेक्षण भारत भर में CSC, जन सेवा केंद्र और साइबर कैफ़े ऑपरेटरों के साथ इन-पर्सन साक्षात्कार के लिए डिज़ाइन किया गया है। कृपया सभी प्रश्नों का सटीक उत्तर दें।",
+    "features": {
+      "bilingual": "द्विभाषी: हिंदी और अंग्रेज़ी",
+      "autoSave": "ऑटो-सेव: डेटा स्वचालित रूप से सहेजा जाता है",
+      "offlineReady": "ऑफ़लाइन तैयार: बिना इंटरनेट के भी काम करता है",
+      "mobileFirst": "मोबाइल-फ़र्स्ट: फ़ोन पर आसानी से उपयोग करें"
+    }
+  },
+  "survey": {
+    "pageTitle": "सर्वेक्षण फ़ॉर्म",
+    "researcherName": {
+      "hi": "शोधकर्ता का नाम",
+      "en": "Researcher Name"
+    },
+    "sectionA": {
+      "title": {
+        "hi": "खंड A — बुनियादी जानकारी",
+        "en": "Section A — Basic Information"
+      },
+      "centerName": {
+        "hi": "दुकान / केंद्र का नाम",
+        "en": "Shop / Center Name"
+      },
+      "locationArea": {
+        "hi": "स्थान / क्षेत्र",
+        "en": "Location / Area"
+      },
+      "pincode": {
+        "hi": "पिनकोड",
+        "en": "Pincode"
+      },
+      "districtState": {
+        "hi": "जिला / राज्य",
+        "en": "District / State"
+      },
+      "tierLevel": {
+        "hi": "टियर स्तर",
+        "en": "Tier Level",
+        "options": {
+          "tier1": "टियर 1",
+          "tier2": "टियर 2",
+          "tier3": "टियर 3",
+          "rural": "ग्रामीण"
+        }
+      },
+      "centerType": {
+        "hi": "केंद्र का प्रकार",
+        "en": "Center Type",
+        "options": {
+          "csc": "CSC",
+          "jsk": "जन सेवा केंद्र (JSK)",
+          "cyberCafe": "साइबर कैफ़े",
+          "combined": "संयुक्त (Combined)",
+          "other": "अन्य (Other)"
+        }
+      },
+      "operatorName": {
+        "hi": "ऑपरेटर का नाम",
+        "en": "Operator Name"
+      },
+      "operatorGender": {
+        "hi": "ऑपरेटर का लिंग",
+        "en": "Operator Gender",
+        "options": {
+          "male": "पुरुष (Male)",
+          "female": "महिला (Female)"
+        }
+      },
+      "operatorAge": {
+        "hi": "ऑपरेटर की अनुमानित आयु",
+        "en": "Operator Approx. Age"
+      }
+    },
+    "sectionB": {
+      "title": {
+        "hi": "खंड B — तालमेल के प्रश्न",
+        "en": "Section B — Rapport Questions"
+      },
+      "yearsInBusiness": {
+        "hi": "आप कितने सालों से यह काम कर रहे हैं?",
+        "en": "How many years have you been in this business?"
+      },
+      "mainService": {
+        "hi": "आपकी मुख्य सेवा क्या है?",
+        "en": "What is your main service?"
+      },
+      "dailyCustomers": {
+        "hi": "रोज़ाना कितने ग्राहक आते हैं?",
+        "en": "How many daily customers do you get?"
+      }
+    },
+    "sectionC": {
+      "title": {
+        "hi": "खंड C — कमीशन और कमाई",
+        "en": "Section C — Commission & Earnings"
+      },
+      "currentBankPartner": {
+        "hi": "वर्तमान बैंक पार्टनर कौन है?",
+        "en": "Who is your current bank partner?"
+      },
+      "commissionPerCardLoan": {
+        "hi": "प्रति कार्ड / लोन पर कितना कमीशन मिलता है?",
+        "en": "What is the commission per card / loan?"
+      },
+      "sellsInsurance": {
+        "hi": "क्या आप बीमा बेचते हैं?",
+        "en": "Do you sell insurance?",
+        "options": {
+          "yes": "हाँ (Yes)",
+          "no": "नहीं (No)",
+          "sometimes": "कभी-कभी (Sometimes)"
+        }
+      },
+      "insuranceCommission": {
+        "hi": "बीमा पर कितना कमीशन मिलता है?",
+        "en": "What is the insurance commission?"
+      }
+    },
+    "sectionD": {
+      "title": {
+        "hi": "खंड D — विश्वसनीयता और समस्याएँ",
+        "en": "Section D — Reliability & Pain Points"
+      },
+      "payoutTiming": {
+        "hi": "भुगतान का समय कैसा है?",
+        "en": "How is the payout timing?",
+        "options": {
+          "onTime": "समय पर (On time)",
+          "sometimesDelayed": "कभी-कभी देरी (Sometimes delayed)",
+          "alwaysDelayed": "हमेशा देरी (Always delayed)"
+        }
+      },
+      "hadPaymentDispute": {
+        "hi": "क्या कभी भुगतान विवाद हुआ है?",
+        "en": "Have you had payment disputes?",
+        "options": {
+          "yesMultiple": "हाँ, कई बार (Yes, multiple times)",
+          "yesOnce": "हाँ, एक-दो बार (Yes, once or twice)",
+          "no": "नहीं (No)"
+        }
+      },
+      "disputeResolutionTime": {
+        "hi": "विवाद सुलझने में कितना समय लगा?",
+        "en": "How long did dispute resolution take?"
+      },
+      "biggestPayoutProblem": {
+        "hi": "भुगतान में सबसे बड़ी समस्या क्या है?",
+        "en": "What is the biggest payout problem?"
+      }
+    },
+    "sectionE": {
+      "title": {
+        "hi": "खंड E — अवसर",
+        "en": "Section E — Opportunity"
+      },
+      "openToNewPlatform": {
+        "hi": "क्या आप नए प्लेटफ़ॉर्म के लिए तैयार हैं?",
+        "en": "Are you open to a new platform?",
+        "options": {
+          "yesDefinitely": "हाँ, बिल्कुल (Yes, definitely)",
+          "maybe": "शायद (Maybe)",
+          "no": "नहीं (No)"
+        }
+      },
+      "mostImportantFactor": {
+        "hi": "नए प्लेटफ़ॉर्म में सबसे ज़रूरी बात क्या होनी चाहिए?",
+        "en": "What is the most important factor in a new platform?"
+      },
+      "openToWhatsapp": {
+        "hi": "क्या आप WhatsApp पर संपर्क के लिए तैयार हैं?",
+        "en": "Are you open to being contacted on WhatsApp?",
+        "options": {
+          "yes": "हाँ (Yes)",
+          "no": "नहीं (No)"
+        }
+      },
+      "whatsappNumber": {
+        "hi": "WhatsApp नंबर",
+        "en": "WhatsApp Number"
+      }
+    },
+    "sectionF": {
+      "title": {
+        "hi": "खंड F — खुले प्रश्न",
+        "en": "Section F — Open-Ended"
+      },
+      "otherProblems": {
+        "hi": "और कोई समस्या जो आप बताना चाहें?",
+        "en": "Any other problems you'd like to mention?"
+      },
+      "oneThingToChange": {
+        "hi": "अगर एक चीज़ बदल सकें तो क्या बदलेंगे?",
+        "en": "If you could change one thing, what would it be?"
+      }
+    },
+    "validation": {
+      "centerNameRequired": "केंद्र का नाम आवश्यक है",
+      "pincodeRequired": "पिनकोड आवश्यक है",
+      "pincodeInvalid": "पिनकोड 6 अंकों का होना चाहिए",
+      "whatsappInvalid": "कृपया 10 अंकों का सही मोबाइल नंबर दर्ज करें",
+      "researcherRequired": "शोधकर्ता का नाम आवश्यक है"
+    }
+  },
+  "thankYou": {
+    "title": "धन्यवाद!",
+    "message": "आपका सर्वेक्षण सफलतापूर्वक जमा हो गया है।",
+    "subtitle": "फ़ील्ड डेटा संग्रह में योगदान के लिए आपका आभार।"
+  },
+  "results": {
+    "title": "सर्वेक्षण परिणाम",
+    "passwordPrompt": "परिणाम देखने के लिए पासवर्ड दर्ज करें",
+    "password": "पासवर्ड",
+    "unlock": "अनलॉक करें",
+    "wrongPassword": "ग़लत पासवर्ड। कृपया पुनः प्रयास करें।",
+    "totalResponses": "कुल सर्वेक्षण",
+    "openToNewPlatform": "नए प्लेटफ़ॉर्म के लिए तैयार",
+    "hadDisputes": "भुगतान विवाद",
+    "noData": "अभी तक कोई सर्वेक्षण डेटा नहीं है।",
+    "loading": "लोड हो रहा है..."
+  }
+}

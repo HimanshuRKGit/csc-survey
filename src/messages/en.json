@@ -4,7 +4,7 @@
     "description": "Field survey data collection tool for CSC, Jan Seva Kendra, and Cyber Cafe operators"
   },
   "common": {
-    "appTitle": "CSC Field Survey",
+    "appTitle": "Operator Field Survey",
     "startSurvey": "Start Survey",
     "submit": "Submit",
     "submitting": "Submitting...",

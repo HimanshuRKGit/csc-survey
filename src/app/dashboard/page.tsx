@@ -327,7 +327,10 @@ function Dashboard({ password }: { password: string }) {
       const res = await fetch("/api/dashboard", {
         headers: { "x-dashboard-password": password },
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || `HTTP ${res.status}`);
+      }
       const json = await res.json();
       setAllRows(json.data ?? []);
       setLastUpdated(new Date());

@@ -44,7 +44,7 @@ interface FormData {
 }
 
 const initialFormData: FormData = {
-  researcher_name: "",
+  researcher_name: "Himanshu Kumar",
   center_name: "",
   location_area: "",
   pincode: "",
@@ -133,9 +133,6 @@ export default function SurveyPage() {
   const validate = (): boolean => {
     const newErrors: Partial<Record<keyof FormData, string>> = {};
 
-    if (!formData.researcher_name.trim()) {
-      newErrors.researcher_name = t("validation.researcherRequired");
-    }
     if (!formData.center_name.trim()) {
       newErrors.center_name = t("validation.centerNameRequired");
     }
@@ -206,19 +203,7 @@ export default function SurveyPage() {
       </div>
 
       <form onSubmit={handleSubmit} noValidate>
-        {/* ===== Researcher Name ===== */}
-        <div className="card p-5 mb-4">
-          <FormField
-            hiLabel={t("researcherName.hi")}
-            enLabel={t("researcherName.en")}
-            name="researcher_name"
-            value={formData.researcher_name}
-            onChange={updateField("researcher_name")}
-            required
-            error={errors.researcher_name}
-            placeholder="शोधकर्ता का नाम / Researcher Name"
-          />
-        </div>
+        <input type="hidden" name="researcher_name" value="Himanshu Kumar" />
 
         {/* ===== Section A — Basic Information ===== */}
         <SectionHeader
